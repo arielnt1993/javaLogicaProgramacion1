@@ -2,10 +2,11 @@ class Personas{
     int dni;
     String nombre;
 
-    Personas(int DNI,String NOMBRE){
-        //no usar mayusculas de esta forma
-        dni = DNI;
-        nombre = NOMBRE;
+    Personas(int dni,String nombre){
+        //usar this. le dice al compilador que las variables de la izq son las que se instancian
+        // y las de la derecha las variables locales
+        this.dni = dni;
+        this.nombre = nombre;
     }
     /* calificadores de acceso:
     * si es publico, lov e cualquiera, protected lo ve esa clase y
