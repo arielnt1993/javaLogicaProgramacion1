@@ -36,6 +36,10 @@ class Empleados extends Humanos {
     public Empleados() {
         super("nombre");
     }
+    //puede haber methor overloading por si las moscas
+    public  Empleados(String nombre){
+        super(nombre);
+    }
 
     //podemos poner un metodo para modificar directamente un key
     void pp() {
@@ -52,7 +56,7 @@ class Empleados extends Humanos {
 
 public class claseParte5HerenciaPolimorfismo {
     public static void main(String[] args) {
-        Empleados p = new Empleados();
+        Empleados p = new Empleados("carlos");
         p.pp();
         System.out.println(p.nombre);
         p.setNombre("ariel");
